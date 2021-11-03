@@ -1,8 +1,32 @@
-var toogled = $("#blok").html('<span oncopy="winner" id="main-block">H<span class="n-1">e</span><span class="n-2">L</span><span class="n-3">L</span><span class="n-4">o</span></span>')
+
+
+
+
+var toogled = $("#blok").html('<span oncopy="winner" id="main-block">H<span class="n-1">i</span><span class="n-2">l</span><span class="n-3">a</span><span class="n-4">n</span><span class="n-1">g</span> </span><span class="n-3">o</span></span><span class="n-1">t</span></span><span class="n-4">a</span></span><span class="n-1">k</span></span><span class="n-3">n</span></span><span class="n-2">y</span></span><span class="n-1">a</span></span>')
 var background = $("#blok").css("background-color", "Beige")
 
 function changeText(text) {
+    var toogledText = text
+    var winText = 'H<span class="n-1">i</span><span class="n-2">l</span><span class="n-3">a</span><span class="n-4">n</span><span class="n-1">g</span> </span><span class="n-3">o</span></span><span class="n-1">t</span></span><span class="n-4">a</span></span><span class="n-1">k</span></span><span class="n-3">n</span></span><span class="n-2">y</span></span><span class="n-1">a</span>'
     toogled = $("#blok").html(text)
+    if (toogledText === winText) {
+        $("#blok").on("copy", function (){
+            $("body").css("background-color", "green")
+           $("#judul").html('Mantab <span class="n-1">Bang!</span>')
+           $("h2").html("Good")
+           $("h3").html("Bang Jago")
+           $("a").css("display", "block")
+       }) 
+    } else {
+        $("#blok").on("copy", function (){
+            $("body").css("background-color", "red")
+           $("#judul").html('Kampang')
+           $("h2").html("Noob")
+           $("h3").html('<a href="">Salah Cok</a>')
+           $("a").css("display", "block")
+        // $(document).html(dataPage)
+       })
+    }
 }
 
 $(".btn-1").on("click mouseover", () =>  {
@@ -61,3 +85,7 @@ $(document).on("keypress", function (event) {
 $("#blok").on("mouseover", function () {
     $("#blok").toggleClass("right")
 })
+
+
+// Data
+

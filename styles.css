@@ -25,5 +25,25 @@ a {
 
 .top2 {
     top: 0;
+
+}
+
+.judul-level {
+    text-align: center;
+}
+
+.levels {
     
+    width: fit-content;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+.levels-1 {
+    display: none;
+    width: fit-content;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
 }

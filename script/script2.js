@@ -1,3 +1,6 @@
+// import { dataPage } from "../script-data"
+
+
 var toogled = $("#blok").html('<span oncopy="winner" id="main-block">H<span class="n-1">e</span><span class="n-2">L</span><span class="n-3">L</span><span class="n-4">o</span></span>')
 var win = $("#blok").html('Y<span class="n-1">o</span><span class="n-2">u</span> <span class="n-3">m</span><span class="n-4">a</span><span class="n-5">d</span> <span class="n-2">B</span><span class="n-4">r</span><span class="n-1">o</span><span class="n-2">?</span>')
 var background = $("#blok").css("background-color", "Beige")
@@ -21,8 +24,10 @@ function changeText(text) {
             $("body").css("background-color", "red")
            $("#judul").html('Kampang')
            $("h2").html("Noob")
-           $("h3").html('<a href="">Salah Gblok</a>')
+           $("h3").html('<a href="">Salah Cok</a>')
            $("a").css("display", "block")
+           $(".levels-1").css("display", "block")
+        // $(document).html(dataPage)
        })
     }
 }
