@@ -47,3 +47,7 @@ a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
 }
+
+@media (max-width: 600px) {
+    
+}

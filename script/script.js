@@ -82,9 +82,7 @@ $(document).on("keypress", function (event) {
     }
 })
 
-$("#blok").on("mouseover", function () {
-    $("#blok").toggleClass("right")
-})
+
 
 
 // Data
